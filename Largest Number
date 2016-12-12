@@ -1,0 +1,17 @@
+
+
+Given an integer n, return the largest number that contains exactly n digits.
+
+----------------------------------------------
+#Spoilers
+----------------------------------------------
+
+int largestNumber(int n) {
+
+int max = 0; 
+    for (int i = n; i > 0; i--) {
+        max = max * 10; 
+        max += 9;
+    }
+    return max;
+}
